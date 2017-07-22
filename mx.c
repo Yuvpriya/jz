@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+long int r[20],i,j,n,temp,c;
+long int sum=0;
+clrscr();
+scanf("%ld",&n);
+for(i=0;i<n;i++)
+{
+scanf("%d",&r[i]);
+}
+for(i=0;i<n;i++)
+{
+for(j=i+1;j<n;j++)
+{
+if(r[j]>r[i])
+{
+temp=r[i];
+r[i]=r[j];
+r[j]=temp;
+}
+}
+}
+for(i=0;i<n-1;i++)
+{
+temp=r[i+1];
+c=0;
+while(temp!=0)
+{
+temp=temp/10;
+c++;
+}
+sum=(sum*pow(10,c))+a[i+1];
+}
+printf("\n%ld",sum);
+getch();
+}
