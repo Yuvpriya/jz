@@ -4,7 +4,6 @@ void main()
 {
 char c[100];
 int i,j,len,temp=0,k=3;
-clrscr();
 printf("Enter the number");
 scanf("%s",c);
 len=strlen(c);
